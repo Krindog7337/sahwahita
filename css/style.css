@@ -1,0 +1,343 @@
+:root {
+  /* Step -2: 12.50px → 12.80px */
+  --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.80rem);
+
+  /* Step -1: 15.00px → 16.00px */
+  --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1.00rem);
+
+  /* Step 0: 18.00px → 20.00px */
+  --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+
+  /* Step 1: 21.60px → 25.00px */
+  --step-1: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+
+  /* Step 2: 25.92px → 31.25px */
+  --step-2: clamp(1.62rem, calc(1.50rem + 0.58vw), 1.95rem);
+
+  /* Step 3: 31.10px → 39.06px */
+  --step-3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
+
+  /* Step 4: 37.32px → 48.83px */
+  --step-4: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
+
+  /* Step 5: 44.79px → 61.04px */
+  --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
+
+  /* button */
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+  /* border: 1px solid red; */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header, main, footer {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: .5rem;
+}
+.logo img {
+  max-height: 50px;
+}
+
+nav {
+  display: flex;
+  margin: auto 1rem;
+}
+
+nav a {
+  /* margin: .5rem; */
+  padding: .5rem;
+  text-decoration: none;
+  color: black;
+  border-radius: 16px;
+  transition: 0.3s;
+  margin: 0 .2rem;
+}
+
+nav a:hover:not(.dropnav){
+  background-color: lightblue;
+  padding: .5rem 2rem;
+}
+ 
+.project-nav {
+  position: relative;
+  display: inline-block;
+  border-radius: 1rem;
+}
+
+.dropproject {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent; 
+  cursor: pointer;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  font: inherit;
+  padding: .5rem;
+  margin-right: .2rem;
+  transition: .3s;
+}
+.dropproject:hover, .dropproject:focus {
+  background-color: lightblue;
+  padding: .5rem 2rem;
+}
+
+.project-content {
+  display: none;
+  position: absolute;
+  min-width: 10rem;
+  z-index: 1;
+  background-color: lightblue;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  opacity: 0;
+  transition: .3s;
+  /* transform: translateY(5%) */
+}
+
+.project-content a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.dropnav {
+  transition: .3s;
+}
+
+.dropnav:hover{
+  color: whitesmoke;
+  padding-left: 1rem;
+}
+
+.project-nav:hover .gg-chevron-down-navbar {
+  opacity: 1;
+  margin-left: .3rem;
+}
+
+.project-nav:hover .project-content,
+.project-nav:focus .project-content,
+.project-nav:focus-within .project-content {
+  display: block;
+  opacity: 1;
+  transition-delay: 1s;
+}
+.project-nav:hover .dropproject {
+  background-color: lightblue;
+  padding: .5rem 2rem;
+}
+
+
+/* Hero */
+.custom-shape-divider-top-1675912906 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1675912906 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 56px;
+}
+
+.custom-shape-divider-top-1675912906 .shape-fill {
+  fill: #4A90E2;
+}
+
+.hero {
+  background-color: #4A90E2;
+}
+.hero-content {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.span-hero {
+  padding: 1rem;
+}
+.span-sahwahita {
+  display: block;
+  font-size: var(--step-5);
+  font-weight: bold;
+  margin: 1rem auto;
+}
+
+.span-berguna {
+  display: block;
+  font-size: var(--step-2);
+  margin: 1rem auto;
+}
+
+.hero-desc {
+  max-width: 60%;
+}
+
+.hero-cta {
+  display: flex;
+}
+
+.primary-btn {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 1px white;
+  border-radius: 24px;
+  background-color: white;
+  padding: 12px 24px;
+  margin: 0 .5rem 0 0;
+  transition: .3s;
+}
+
+.primary-btn:hover .gg-shopping-cart, .primary-btn:focus .gg-shopping-cart {
+  margin-left: .3rem;
+  width: 24px;
+  transform: translateX(40%);
+  opacity: 1;
+}
+
+.primary-btn:hover, .primary-btn:focus {
+  padding: 12px 32px;
+}
+
+.secondary-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px white;
+  border-radius: 24px;
+  color: white;
+  background-color: transparent;
+  padding: 12px 24px;
+  transition: .3s;
+}
+
+.secondary-btn:hover .gg-chevron-down, .secondary-btn:focus .gg-chevron-down{
+  margin-left: .3rem;
+  width: 22px;
+  opacity: 1;
+  transform: translateX(40%);
+}
+.secondary-btn:hover, .secondary-btn:focus {
+  padding: 12px 32px;
+  border: solid 1px white;
+}
+
+/* PROJECT */
+.project-card-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card {
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: rgba(98, 103, 107, 0.2) 0px 8px 24px;
+  transition: .3s;
+}
+
+.project-card:hover {
+  transform: scale(103%) translateY(-2%);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+
+.card-image img {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+
+/* ability */
+.ability-grid {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+
+/* team */
+.team-statistic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.team-card {
+  display: flex;
+  padding: .7rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: rgba(98, 103, 107, 0.2) 0px 8px 24px;
+}
+
+.team-profile img {
+  max-width: 128px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  margin: 1rem;
+}
+
+.team-content {
+  margin: 1rem 0;
+}
+
+
+/* footer */
+.footer-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 2rem;
+}
+.footer-nav {
+  display: grid;
+  grid-column: auto;
+}
+
+.footer-nav a {
+  padding: .5rem 1rem .5rem 0;
+  margin: 0 0 .3rem;
+  text-decoration: none;
+  color: black;
+  max-width: 50%;
+  border-radius: 1rem;
+  transition: .3s;
+}
+
+.footer-nav a:hover, .footer-nav a:focus {
+  padding: .5rem 0 .5rem 1rem;
+  background-color: #4A90E2;
+}
+
+
+/* @media (prefers-color-scheme:dark) {
+  html, body {
+    background-color: grey;
+  }
+} */

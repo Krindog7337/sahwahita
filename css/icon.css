@@ -1,0 +1,20 @@
+.gg-shopping-cart {
+  width: 0;
+  height: 20px;
+  opacity: 0;
+  transition: .3s;
+}
+
+.gg-chevron-down {
+  width: 0;
+  height: 20px;
+  opacity: 0;
+  transition: .3s;
+}
+
+.gg-chevron-down-navbar {
+  width: 16px;
+  height: 14px;
+  opacity: 1;
+  transition: .3s;
+}
