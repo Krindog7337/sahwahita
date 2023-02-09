@@ -1,0 +1,97 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: .5rem;
+}
+.logo img {
+  max-height: 50px;
+}
+
+nav {
+  display: flex;
+  margin: auto 1rem;
+}
+
+nav a {
+  padding: .5rem;
+  text-decoration: none;
+  color: black;
+  border-radius: 16px;
+  transition: 0.3s;
+  margin: 0 .2rem;
+}
+
+nav a:hover:not(.dropnav){
+  background-color: lightblue;
+  padding: .5rem 2rem;
+}
+ 
+.project-nav {
+  position: relative;
+  display: inline-block;
+  border-radius: 1rem;
+}
+
+.dropproject {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent; 
+  cursor: pointer;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  font: inherit;
+  padding: .5rem;
+  margin-right: .2rem;
+  transition: .3s;
+}
+.dropproject:hover, .dropproject:focus {
+  background-color: lightblue;
+  padding: .5rem 2rem;
+}
+
+.project-content {
+  display: none;
+  position: absolute;
+  min-width: 10rem;
+  z-index: 1;
+  background-color: lightblue;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  opacity: 0;
+  transition: .3s;
+  /* transform: translateY(5%) */
+}
+
+.project-content a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.dropnav {
+  transition: .3s;
+}
+
+.dropnav:hover{
+  color: whitesmoke;
+  padding-left: 1rem;
+}
+
+.project-nav:hover .gg-chevron-down-navbar {
+  opacity: 1;
+  margin-left: .3rem;
+}
+
+.project-nav:hover .project-content,
+.project-nav:focus .project-content,
+.project-nav:focus-within .project-content {
+  display: block;
+  opacity: 1;
+  transition-delay: 1s;
+}
+.project-nav:hover .dropproject {
+  background-color: lightblue;
+  padding: .5rem 2rem;
+}
