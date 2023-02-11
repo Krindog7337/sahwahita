@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('/css/icon.css');
 
-
-head, body {
+html, body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: var(--id-white);
   font-family: 'Source Sans Pro', sans-serif;
 }
 

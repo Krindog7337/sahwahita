@@ -6,8 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/headfoot.css">
-  <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/icon.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
   <title>Home | Sahwahita</title>
 </head>
 
@@ -15,24 +18,35 @@
   <header>
     <div class="navbar">
       <div class="logo">
-        <a href="index.html">
+        <a class="index" href="index.html">
           <img src="/assets/logo/sahwahita.png" alt="Sahwahita">
         </a>
       </div>
       <nav>
         <div class="project-nav">
           <button class="dropproject">Project
-            <svg class="gg-chevron-down-navbar" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.34317 7.75732L4.92896 9.17154L12 16.2426L19.0711 9.17157L17.6569 7.75735L12 13.4142L6.34317 7.75732Z"
-                fill="currentColor" />
-            </svg>
+            <i class="material-symbols-rounded expand-more-navbar">
+              expand_more
+            </i>
           </button>
           <div class="project-content">
-            <a class="dropnav" href="/sahwahita-tipat-bantal/index.html">lorem</a>
-            <a class="dropnav" href="/sahwahita-narkoba/index.html">ipsum</a>
-            <a class="dropnav" href="/sahwahita-wirausaha/index.html">dolorum</a>
+            <a class="dropnav" href="/sahwahita-tipat-bantal/index.html">
+              <i class="material-symbols-rounded temple-hindu">
+                temple_hindu
+              </i>
+              Siat Tipat Bantal</a>
+            <a class="dropnav" href="/sahwahita-narkoba/index.html">
+              <i class="material-symbols-rounded pill">
+                pill
+              </i>
+              Narkoba
+            </a>
+            <a class="dropnav" href="/sahwahita-wirausaha/index.html">
+              <i class="material-symbols-rounded restaurant">
+                restaurant
+              </i>
+              Wirausaha
+            </a>
           </div>
         </div>
         <a href="about.html">About</a>
@@ -51,32 +65,35 @@
       <p class="hero-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum quos harum, ut minus ex
         nisi.</p>
       <div class="hero-cta">
-        <button class="primary-btn">Shop Now
-          <svg class="gg-shopping-cart" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
-              fill="currentColor" />
-            <path
-              d="M10 22C11.1046 22 12 21.1046 12 20C12 18.8954 11.1046 18 10 18C8.89543 18 8 18.8954 8 20C8 21.1046 8.89543 22 10 22Z"
-              fill="currentColor" />
-            <path
-              d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z"
-              fill="currentColor" />
-          </svg>
-        </button>
-        <button class="secondary-btn">Know Us
-          <svg class="gg-chevron-down" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M6.34317 7.75732L4.92896 9.17154L12 16.2426L19.0711 9.17157L17.6569 7.75735L12 13.4142L6.34317 7.75732Z"
-              fill="currentColor" />
-          </svg>
-        </button>
+        <a href="store.html" class="primary-btn">
+          <i class="material-symbols-rounded shopping-cart">
+            shopping_cart
+          </i>
+
+          <!-- <svg class="gg-shopping-cart" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
+          fill="currentColor" />
+          <path
+          d="M10 22C11.1046 22 12 21.1046 12 20C12 18.8954 11.1046 18 10 18C8.89543 18 8 18.8954 8 20C8 21.1046 8.89543 22 10 22Z"
+          fill="currentColor" />
+          <path
+          d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z"
+          fill="currentColor" />
+        </svg> -->
+          <span class="btn-text">Shop Now</span>
+        </a>
+        <a href="" class="secondary-btn">
+          <i class="material-symbols-rounded expand-more">
+            expand_more
+          </i>
+          Know Us
+        </a>
       </div>
     </div>
   </div>
-  <div class="custom-shape-divider-bottom-1675943691">
+  <!-- <div class="custom-shape-divider-bottom-1675943691">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
       <path
         d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
@@ -88,7 +105,7 @@
         d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
         class="shape-fill"></path>
     </svg>
-  </div>
+  </div> -->
   <div class="store-cta">
     <div class="store-cta-wrapper">
       <h1>BEST SELLER</h1>
@@ -100,11 +117,18 @@
           <div class="store-product-content">
 
             <div class="store-product-desc">
-              
-              <h3>PDI</h3>
-              <h2>15000</h2>
+
+              <span>Chicken Ramen Betutu</span>
+              <span>Rp15000</span>
             </div>
-            <button class="primary-btn">Lihat Produk Ini</button>
+            <div class="store-product-button">
+              <a class="primary-btn">
+                <i class="material-symbols-rounded ramen-dining">
+                  ramen_dining
+                </i>
+                Lihat Produk
+              </a>
+            </div>
           </div>
         </div>
         <div class="store-product-card">
@@ -114,56 +138,68 @@
           <div class="store-product-content">
 
             <div class="store-product-desc">
-              <h3>Antek PDI</h3>
-              <h2>15000</h2>
+              <span>Bir Pletok</span>
+              <span>Rp5000</span>
             </div>
-          
-            <button class="primary-btn">Lihat Produk Ini</button>
+            <div class="store-product-button">
+              <a class="primary-btn product-see">
+                <i class="material-symbols-rounded local-bar">
+                  local_bar
+                </i>
+                Lihat Produk
+              </a>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
   </div>
-  <div class="custom-shape-divider-top-1675954738">
+  <!-- <div class="custom-shape-divider-top-1675954738">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      <path
+        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+        class="shape-fill"></path>
     </svg>
-</div>
+  </div> -->
   <main>
-    <div class="project">
+    <div class="project" id="project">
       <h1>Project</h1>
       <div class="project-card-grid">
-        <div class="project-card">
-          <div class="card-image">
-            <img src="assets/logo/sahwahita-whitebg.jpg" alt="">
+        <a href="/sahwahita-tipat-bantal/" class="project-card">
+          <img src="assets/image/61698c7aece86.jpg" alt="">
+          <div class="project-card-desc">
+            <span>Siat Tipat Bantal</span>
+            <span>Warisan budaya tak benda desa adat Kapal</span>
           </div>
-          <h2>P</h2>
-          <h3>Me</h3>
-        </div>
-        <div class="project-card">
+        </a>
+        <a href="/sahwahita-narkoba/" class="project-card">
           <div class="card-image">
-            <img src="assets/logo/sahwahita-whitebg.jpg" alt="">
+            <img src="assets/image/61698c7aece86.jpg" alt="">
           </div>
-          <h2>P</h2>
-          <h3>Jo</h3>
-        </div>
-        <div class="project-card">
+          <div class="project-card-desc">
+            <span>Narkoba</span>
+            <span>Si mahal perusak masa depan</span>
+          </div>
+        </a>
+        <a href="/sahwahita-wirausaha/" class="project-card">
           <div class="card-image">
-            <img src="assets/logo/sahwahita-whitebg.jpg" alt="">
+            <img src="assets/image/61698c7aece86.jpg" alt="">
           </div>
-          <h2>P</h2>
-          <h3>P</h3>
-        </div>
+          <div class="project-card-desc">
+            <span>Sahwahita Wirausaha</span>
+            <span>Proyek kewirausahaan bidang kuliner Sahwahita</span>
+          </div>
+        </a>
       </div>
-      <div class="ability">
+      <div class="ability" id="ability">
         <h1>Sahwahita Ability</h1>
         <div class="ability-grid">
           <div class="ability">
             <div class="ability-image">
 
             </div>
-            <h2>Ability Name</h2>
+            <h2>Creative</h2>
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
           <div class="ability">
@@ -189,13 +225,11 @@
           unde, impedit dignissimos molestias labore ipsa consequuntur asperiores et? Eveniet earum veritatis nulla
           optio delectus officia maxime!</p>
       </div>
-      <div class="team">
+      <div class="team" id="team">
         <h1>Our Team</h1>
-        <div class="team-statistic">
+        <div class="team-member">
           <div class="team-card">
-            <div class="team-profile">
-              <img src="assets/team/matthew.jpg" alt="">
-            </div>
+            <img src="assets/team/matthew.jpg" alt="">
             <div class="team-content">
               <span class="name">Matthew</span>
               <div class="profile-msc">
@@ -207,9 +241,7 @@
             </div>
           </div>
           <div class="team-card">
-            <div class="team-profile">
-              <img src="assets/team/matthew.png" alt="">
-            </div>
+            <img src="assets/team/matthew.png" alt="">
             <div class="team-content">
               <span class="name">Matthew</span>
               <div class="profile-msc">
@@ -221,9 +253,7 @@
             </div>
           </div>
           <div class="team-card">
-            <div class="team-profile">
-              <img src="assets/team/matthew.jpg" alt="">
-            </div>
+            <img src="assets/team/matthew.jpg" alt="">
             <div class="team-content">
               <span class="name">Matthew</span>
               <div class="profile-msc">
@@ -235,9 +265,7 @@
             </div>
           </div>
           <div class="team-card">
-            <div class="team-profile">
-              <img src="assets/team/matthew.png" alt="">
-            </div>
+            <img src="assets/team/matthew.png" alt="">
             <div class="team-content">
               <span class="name">Matthew</span>
               <div class="profile-msc">
@@ -249,9 +277,7 @@
             </div>
           </div>
           <div class="team-card">
-            <div class="team-profile">
-              <img src="assets/team/matthew.jpg" alt="">
-            </div>
+            <img src="assets/team/matthew.jpg" alt="">
             <div class="team-content">
               <span class="name">Matthew</span>
               <div class="profile-msc">
@@ -263,9 +289,7 @@
             </div>
           </div>
           <div class="team-card">
-            <div class="team-profile">
-              <img src="assets/team/matthew.png" alt="">
-            </div>
+            <img src="assets/team/matthew.png" alt="">
             <div class="team-content">
               <span class="name">Matthew</span>
               <div class="profile-msc">
@@ -281,6 +305,13 @@
       </div>
 
   </main>
+  <div class="custom-shape-divider-bottom-1676096280">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path
+        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+        class="shape-fill"></path>
+    </svg>
+  </div>
   <footer>
     <!-- <center>----------------------footer----------------------</center> -->
     <div class="footer-grid">
@@ -290,7 +321,6 @@
 
           <a href="#project">Project kami</a>
           <a href="#ability">Ability</a>
-          <a href="#skills">Skills</a>
           <a href="#team">Team</a>
         </div>
       </div>
@@ -314,6 +344,7 @@
 
       </div>
     </div>
+    <span class="cp">Copyright 2022 Sahwahita</span>
   </footer>
 </body>
 

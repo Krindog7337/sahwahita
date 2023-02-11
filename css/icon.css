@@ -1,20 +1,12 @@
-.gg-shopping-cart {
+.shopping-cart, .expand-more, .ramen-dining, .local-bar, .dropnav i{
   width: 0;
-  height: 20px;
   opacity: 0;
-  transition: .3s;
+  transition: .5s;
+  /* transform: translateY(11.5%); */
 }
 
-.gg-chevron-down {
-  width: 0;
-  height: 20px;
-  opacity: 0;
-  transition: .3s;
-}
-
-.gg-chevron-down-navbar {
-  width: 16px;
-  height: 14px;
-  opacity: 1;
-  transition: .3s;
+.expand-more-navbar {
+  width:  24px;
+  color: #780e18;
+  transition: .5s;
 }
