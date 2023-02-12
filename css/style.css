@@ -48,7 +48,8 @@
   /* outline: solid 1px red; */
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -61,6 +62,7 @@ main {
   max-width: 1024px;
   margin: 0 auto;
 }
+
 h1 {
   color: var(--id-red);
 }
@@ -120,6 +122,7 @@ h1 {
 .span-hero {
   padding: 1rem;
 }
+
 .span-sahwahita {
   display: block;
   font-size: var(--step-5);
@@ -157,13 +160,15 @@ h1 {
   transition: .5s;
 }
 
-.primary-btn:hover .shopping-cart, .primary-btn:focus .shopping-cart {
+.primary-btn:hover .shopping-cart,
+.primary-btn:focus .shopping-cart {
   margin-right: .5rem;
   width: 24px;
   opacity: 1;
 }
 
-.primary-btn:hover, .primary-btn:focus {
+.primary-btn:hover,
+.primary-btn:focus {
   padding: 0 24px;
 }
 
@@ -182,16 +187,20 @@ h1 {
   transition: .5s;
 }
 
-.secondary-btn:hover .expand-more, .secondary-btn:focus .expand-more{
+.secondary-btn:hover .expand-more,
+.secondary-btn:focus .expand-more {
   margin-right: .5rem;
   width: 18px;
   opacity: 1;
   /* transform: translateX(-30%); */
 }
-.secondary-btn:hover, .secondary-btn:focus {
+
+.secondary-btn:hover,
+.secondary-btn:focus {
   padding: 0px 24px;
   border: solid 1px;
 }
+
 /* best seller */
 .store-cta {
   color: var(--id-white);
@@ -287,7 +296,7 @@ h1 {
   border-radius: 12px;
   cursor: pointer;
   background-color: #f0f0f0;
-  box-shadow: 0px 1px 2px 0px rgba(0,0,0,.3),0px 1px 3px 1px rgba(0,0,0,.15);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .3), 0px 1px 3px 1px rgba(0, 0, 0, .15);
   transition: .3s;
 }
 
@@ -325,7 +334,7 @@ h1 {
 /* team */
 .team-member {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 8px;
   margin: 8px 8px 32px 8px;
 }
@@ -348,6 +357,86 @@ h1 {
 }
 
 
+
+/* Media Query */
+
+/* tablet */
+@media (max-width: 768px) {
+
+  /* button */
+  .primary-btn i,
+  .secondary-btn i {
+    width: 24px;
+    opacity: 1;
+    margin-right: .5rem;
+  }
+
+
+  /* project */
+  .project-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-card:nth-child(3) {
+    grid-area: 2 / 1 / span 1 / span 2;
+  }
+
+  .project-card:nth-child(3) img {
+    aspect-ratio: 3/1;
+  }
+
+
+  /* team */
+  .team-member {
+    grid-template-columns: auto;
+  }
+
+}
+
+/* phone L */
+@media (max-width:480px) {
+
+  /* hero */
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-cta a {
+    margin: 0 auto 8px 0;
+    justify-content: center;
+  }
+
+  .secondary-btn {
+    display: none;
+  }
+
+
+  /* store */
+  .store-product-grid {
+    grid-template-columns: auto;
+  }
+
+  /* project */
+  .project-card-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-card img {
+    aspect-ratio: 3/1 !important;
+  }
+
+  /* ability */
+  .ability-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /* team */
+
+}
 
 
 

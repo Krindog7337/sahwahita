@@ -144,6 +144,12 @@ nav a:hover:not(.dropnav), nav a:focus:not(.dropnav) {
   opacity: 1;
 }
 
+.btn-mobile {
+  display: none;
+}
+
+
+
 /* footer */
 footer {
   background-color: var(--id-red);
@@ -207,4 +213,105 @@ footer {
 
 .custom-shape-divider-bottom-1676096280 .shape-fill {
   fill: var(--id-red);
+}
+
+
+/* media query */
+/* tablet */ 
+@media (max-width: 768px) { 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+  
+  nav {
+    width: 100%;
+    display: none;
+  }
+  
+  #buttonMobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: var(--id-red);
+    cursor: pointer;
+    padding: .5rem;
+  }
+  
+  #buttonMobile i {
+    font-size: 2rem;
+  }
+  
+  .project-nav {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .dropproject {
+    width: 100%;
+  }
+  
+  .project-content {
+    display: none;
+    opacity: 1;
+    float: none;
+    position: relative;
+    background-color: transparent;
+    margin-left: 2rem;
+  }
+  .project-content a, .project-content:hover a{
+    padding: 0;
+    color: var(--id-red);
+  }
+
+  .project-content i {
+    width: 24px !important;
+    opacity: 1 !important;
+    margin-right: .5rem !important;
+  }
+  
+  .dropnav {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+  nav a {
+    margin: 0;
+    padding: 0 .5rem;
+  }
+
+  .nav-on {
+    display: block;
+  }
+
+  .show-dropdown {
+    display: block;
+  }
+}
+
+
+/* Phone L */
+@media (max-width: 480px) {
+  .footer-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-nav a{
+    max-width: 100%;
+    margin: 0;
+  }
+  
 }
