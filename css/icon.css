@@ -1,4 +1,8 @@
-.shopping-cart, .expand-more, .ramen-dining, .local-bar, .dropnav i{
+.shopping-cart,
+.expand-more,
+.ramen-dining,
+.local-bar,
+.dropnav i {
   width: 0;
   opacity: 0;
   transition: .5s;
@@ -6,7 +10,14 @@
 }
 
 .expand-more-navbar {
-  width:  24px;
+  width: 24px;
   color: #780e18;
   transition: .5s;
+}
+
+.fa {
+  color: #780e18;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
 }

@@ -11,16 +11,19 @@
 
 header {
   position: sticky;
-  background-color: #e9eaecdc;
+  background-color: #e9eaec83;
+  /* background-color: #780e1931; */
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   top: 0;
-  z-index: 1;
+  z-index: 99;
 }
 
 .navbar {
   width: 90%;
   max-width: 1024px;
-  margin: .5rem auto;
+  margin: 0 auto;
+  padding: .5rem 0;
   display: flex;
   justify-content: space-between;
 }
@@ -62,7 +65,8 @@ nav .active {
   padding: .5rem 1.5rem;
 }
 
-nav a:hover:not(.dropnav), nav a:focus:not(.dropnav) {
+nav a:hover:not(.dropnav),
+nav a:focus:not(.dropnav) {
   background-color: var(--id-red);
   padding: 0 1.5rem;
   color: var(--id-white);
@@ -71,9 +75,9 @@ nav a:hover:not(.dropnav), nav a:focus:not(.dropnav) {
 .project-nav {
   display: inline-block;
   border-radius: 1rem;
-  padding: .5rem  0;
-  margin: auto ;
-  
+  padding: .5rem 0;
+  margin: auto;
+
 }
 
 
@@ -91,7 +95,8 @@ nav a:hover:not(.dropnav), nav a:focus:not(.dropnav) {
   transition: .5s;
 }
 
-.project-nav:hover .dropproject, .project-nav:focus-within .dropproject {
+.project-nav:hover .dropproject,
+.project-nav:focus-within .dropproject {
   background-color: var(--id-red);
   color: var(--id-white);
   padding: .5rem 2rem;
@@ -122,11 +127,12 @@ nav a:hover:not(.dropnav), nav a:focus:not(.dropnav) {
 }
 
 .dropnav:hover {
-  color: var(--id-white);
-  padding-left: 1rem;
+  color: var(--id-white) !important;
+  padding-left: 1rem !important;
+  background-color: var(--id-red);
 }
 
-.dropnav:hover i{
+.dropnav:hover i {
   opacity: 1;
   width: 24px;
   margin-right: .5rem;
@@ -148,7 +154,10 @@ nav a:hover:not(.dropnav), nav a:focus:not(.dropnav) {
   display: none;
 }
 
-
+.this-page {
+  background-color: #780e1931;
+  padding: 0 1rem;
+}
 
 /* footer */
 footer {
@@ -158,14 +167,12 @@ footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
   width: 90%;
   max-width: 1024px;
   margin: 0 auto;
 }
-
-.footer-nav a {}
 
 .footer-nav {
   display: grid;
@@ -217,51 +224,52 @@ footer {
 
 
 /* media query */
-/* tablet */ 
-@media (max-width: 768px) { 
+/* tablet */
+@media (max-width: 768px) {
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
-  
+
   .logo {
     width: 100%;
     text-align: center;
   }
-  
+
   nav {
     width: 100%;
     display: none;
   }
-  
+
   #buttonMobile {
     display: block;
     position: absolute;
-    top: 0;
+    top: .7rem;
     right: 10px;
     background-color: transparent;
     border: none;
     color: var(--id-red);
     cursor: pointer;
     padding: .5rem;
+    z-index: 100;
   }
-  
+
   #buttonMobile i {
     font-size: 2rem;
   }
-  
+
   .project-nav {
     padding: 0;
     margin: 0;
     width: 100%;
   }
-  
+
   .dropproject {
     width: 100%;
   }
-  
+
   .project-content {
     display: none;
     opacity: 1;
@@ -270,8 +278,10 @@ footer {
     background-color: transparent;
     margin-left: 2rem;
   }
-  .project-content a, .project-content:hover a{
-    padding: 0;
+
+  .project-content a,
+  .project-content:hover a {
+    padding: 0 .5rem;
     color: var(--id-red);
   }
 
@@ -280,16 +290,23 @@ footer {
     opacity: 1 !important;
     margin-right: .5rem !important;
   }
-  
+
   .dropnav {
     display: block;
     width: 100%;
     padding: 0.5rem 1rem;
     text-align: center;
+    transition: .3s;
+
   }
+
   nav a {
-    margin: 0;
-    padding: 0 .5rem;
+    margin: .5rem;
+    padding: 0;
+  }
+
+  nav a:nth-child(4) {
+    margin-bottom: 1rem;
   }
 
   .nav-on {
@@ -298,6 +315,20 @@ footer {
 
   .show-dropdown {
     display: block;
+  }
+
+  .this-page {
+    background-color: #780e1931;
+    padding: 0 1rem;
+  }
+
+
+  /* footer */
+  .footer-nav a:hover {
+    background-color: transparent;
+    padding-left: 0;
+    text-decoration: underline;
+    
   }
 }
 
@@ -309,9 +340,9 @@ footer {
     flex-direction: column;
   }
 
-  .footer-nav a{
+  .footer-nav a {
     max-width: 100%;
     margin: 0;
   }
-  
+
 }
