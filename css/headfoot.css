@@ -9,6 +9,10 @@
   --id-white: #e9eaec;
 }
 
+.us {
+  pointer-events: none;
+}
+
 header {
   position: sticky;
   background-color: #e9eaec83;
@@ -191,8 +195,7 @@ footer {
 
 .footer-nav a:hover,
 .footer-nav a:focus {
-  padding: .5rem 0 .5rem 1rem;
-  background-color: #c02332;
+  text-decoration: underline;
 }
 
 .cp {

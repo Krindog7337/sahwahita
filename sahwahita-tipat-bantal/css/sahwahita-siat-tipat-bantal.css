@@ -1,0 +1,28 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  background-color: whitesmoke;
+
+}
+header, main, footer {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.article-image {
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
