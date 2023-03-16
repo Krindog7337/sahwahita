@@ -1,12 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/headfoot.css">
+  <link rel="stylesheet" href="/css/icon.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- google fonts -->
   <title>Home | Sahwahita</title>
 </head>
+
 <body>
-  
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <a class="index" href="index.html">
+          <img src="/assets/logo/sahwahita-bitmap.svg" alt="Sahwahita">
+        </a>
+      </div>
+      <nav class="" id="nav">
+        <div class="project-nav" id="dropdownButton">
+          <button class="dropproject">Project
+            <i class="material-symbols-rounded expand-more-navbar">
+              expand_more
+            </i>
+          </button>
+          <div class="project-content" id="dropdown-menu">
+            <a class="dropnav" href="/sahwahita-tipat-bantal/index.html">
+              <i class="material-symbols-rounded temple-hindu">
+                temple_hindu
+              </i>
+              Siat Tipat Bantal</a>
+            <a class="dropnav" href="/sahwahita-narkoba/index.html">
+              <i class="material-symbols-rounded pill">
+                pill
+              </i>
+              Narkoba
+            </a>
+            <a class="dropnav" href="/sahwahita-wirausaha/index.html">
+              <i class="material-symbols-rounded restaurant">
+                restaurant
+              </i>
+              JeFun Project
+            </a>
+          </div>
+        </div>
+        <a href="about.html" class="">About</a>
+        <a href="store.html">Store</a>
+        <a href="social.html" class="">Social</a>
+      </nav>
+      <button class="btn-mobile" id="buttonMobile">
+        <i class="material-symbols-rounded menu">
+          menu
+        </i>
+      </button>
+    </div>
+    </nav>
+  </header>
+  <!-- <center>---------------hero-----------------</center> -->
+  <div class="hero">
+    <div class="hero-content">
+
+      <span class="span-sahwahita">SAHWAHITA</span>
+      <span class="span-berguna">Bermanfaat Untuk Semua</span>
+      <p class="hero-desc">Buat pendidikan lebih maju dengan Proyek Penguatan Profil Pelajar Pancasila</p>
+      <div class="hero-cta">
+        <a href="store.html" class="primary-btn">
+          <i class="material-symbols-rounded shopping-cart">
+            shopping_cart
+          </i>
+          <span class="btn-text">Shop Now</span>
+        </a>
+        <a href="#project" class="secondary-btn">
+          <i class="material-symbols-rounded expand-more">
+            expand_more
+          </i>
+          Know Us
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="store-cta">
+    <div class="store-cta-wrapper">
+      <h1>BEST SELLER</h1>
+      <div class="store-product-grid fly-up">
+        <div class="store-product-card">
+          <div class="store-product-img">
+            <img src="/sahwahita-wirausaha/assets/products/sushi-up-wide.webp" alt="">
+          </div>
+          <div class="store-product-content">
+            <div class="store-product-desc">
+              <span>Shipper (Sushi Lemper)</span>
+              <span class="fly-up">Rp10000</span>
+            </div>
+            <div class="store-product-button">
+              <!-- CHANGE THIS IF MAIN URL CHANGED -->
+              <a href="https://aesthetic-begonia-2d8fca.netlify.app/store.html#!/Chicken-Betutu-Ramen/p/530320751/category=0"
+                class="primary-btn">
+                <i class="material-symbols-rounded ramen-dining">
+                  local_mall
+                </i>
+                Lihat Produk
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="store-product-card">
+          <div class="store-product-img">
+            <img src="/sahwahita-wirausaha/assets/products/ssp-front-wide.webp" alt="">
+          </div>
+          <div class="store-product-content">
+            <div class="store-product-desc">
+              <span>Sparkling Sunset Tea</span>
+              <span class="fly-up">Rp7000</span>
+            </div>
+            <div class="store-product-button">
+              <!-- CHANGE THIS IF MAIN URL CHANGED -->
+              <a href="https://aesthetic-begonia-2d8fca.netlify.app/store.html#!/Bir-Pletok/p/530313012/category=0"
+                class="primary-btn product-see">
+                <i class="material-symbols-rounded local-bar">
+                  local_mall
+                </i>
+                Lihat Produk
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="project" id="project">
+      <h1>Project</h1>
+      <div class="project-card-grid">
+        <a href="/sahwahita-tipat-bantal/" class="project-card fly-up">
+          <div class="project-card-img">
+
+            <img src="assets/image/perang-tipat-bantal.webp" alt="">
+          </div>
+          <div class="project-card-desc">
+            <span>Siat Tipat Bantal</span>
+            <span>Warisan budaya tak benda desa adat Kapal</span>
+          </div>
+        </a>
+        <a href="/sahwahita-narkoba/" class="project-card fly-up">
+          <div class="project-card-img">
+
+            <img src="assets/image/narkoba.webp" alt="">
+          </div>
+          <div class="project-card-desc">
+            <span>Narkoba</span>
+            <span>Si mahal perusak masa depan</span>
+          </div>
+        </a>
+        <a href="/sahwahita-wirausaha/" class="project-card fly-up">
+          <div class="project-card-img">
+
+            <img src="assets/image/JeFun.webp" alt="">
+          </div>
+          <div class="project-card-desc">
+            <span>JeFun Project</span>
+            <span>Proyek kewirausahaan bidang kuliner Sahwahita</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="about-">
+        <h1>About</h1>
+        <p>Sahwahita berasal dari bahasa sansekerta yang berarti bermanfaat bagi semua. Dengan ini kami berharap kami
+          sebagai generasi muda dapat menjadi bermanfaat bagi semua orang.</p>
+      </div>
+      <div class="team" id="team">
+        <h1>Our Team</h1>
+        <div class="team-member">
+          <div class="team-card fly-up">
+            <img src="/assets/team/anik.webp" alt="">
+            <div class="team-content">
+              <div class="content-wrapper">
+                <span class="name">Anik Yulia</span>
+                <div class="profile-msc">
+                  Selalu jadikan pengalaman sebagai pembelajaran
+                </div>
+              </div>
+              <div class="team-social">
+                <a href="https://www.instagram.com/anikyulia._/" target="_blank" class="fa fa-instagram"></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-card fly-up">
+            <img src="/assets/team/niti.webp" alt="">
+            <div class="team-content">
+              <div class="content-wrapper">
+
+                <span class="name">Niti Darmaningsih</span>
+                <div class="profile-msc">
+                  Do it now or never
+                </div>
+              </div>
+              <div class="team-social">
+                <a href="https://www.instagram.com/nitidarmaningsihh/" target="_blank" class="fa fa-instagram"></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-card fly-up">
+            <img src="/assets/team/matthew.webp" alt="">
+            <div class="team-content">
+              <div class="content-wrapper">
+
+                <span class="name">Matthew Kent</span>
+                <div class="profile-msc">
+                  Siapapun dirimu jadilah yang terbaik
+                </div>
+              </div>
+              <div class="team-social">
+                <a href="https://www.instagram.com/mmmmaaath/" target="_blank" class="fa fa-instagram"></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-card fly-up">
+            <img src="/assets/team/krisna.webp" alt="">
+            <div class="team-content">
+              <div class="content-wrapper">
+
+                <span class="name">Krisna Khailana</span>
+                <div class="profile-msc">
+                  Progress is not linear
+                </div>
+              </div>
+              <div class="team-social">
+                <a href="https://www.instagram.com/krindog7337/" target="_blank" class="fa fa-instagram"></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-card fly-up">
+            <img src="/assets/team/septyan.webp" alt="">
+            <div class="team-content">
+              <div class="content-wrapper">
+
+                <span class="name">Septyan Cahya</span>
+                <div class="profile-msc">
+                  If we never try, how will we know
+                </div>
+              </div>
+              <div class="team-social">
+                <a href="https://www.instagram.com/septyancahyaa/" target="_blank" class="fa fa-instagram"></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-card fly-up">
+            <img src="/assets/team/zilan.webp" alt="">
+            <div class="team-content">
+              <div class="content-wrapper">
+
+                <span class="name">Zilan Dwi</span>
+                <div class="profile-msc">
+                  Think before you speak, don't speak before you think
+                </div>
+              </div>
+              <div class="team-social">
+                <a href="https://www.instagram.com/zilandwcahya" target="_blank" class="fa fa-instagram"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+  </main>
+  <div class="custom-shape-divider-bottom-1676096280">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path
+        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+        class="shape-fill"></path>
+    </svg>
+  </div>
+  <footer>
+    <!-- <center>----------------------footer----------------------</center> -->
+    <div class="footer-grid">
+      <div class="sahwahita-footer">
+        <h3>Sahwahita</h3>
+        <div class="footer-nav">
+
+          <a href="#project">Project kami</a>
+          <a href="#ability">Ability</a>
+          <a href="#team">Team</a>
+        </div>
+      </div>
+      <div class="sahwahita-footer sahwahita-project-footer">
+        <h3>Project</h3>
+        <div class="footer-nav">
+
+          <a href="/sahwahita-tipat-bantal/sahwahita-siat-tipat-bantal.html">Siat Tipat Bantal</a>
+          <a href="/sahwahita-narkoba/sahwahita-narkoba.html">Narkoba</a>
+          <a href="/sahwahita-wirausaha/sahwahita-kuliner">Wirausaha Kuliner</a>
+          <a href="/sahwahita-wirausaha/sahwahita-store.html">Sahwahita Store</a>
+        </div>
+      </div>
+      <div class="sahwahita-footer sahwahita-social-footer">
+        <h3>Social</h3>
+        <div class="footer-nav">
+
+          <a href="">Instagram</a>
+          <a href="">Youtube</a>
+        </div>
+
+      </div>
+    </div>
+    <span class="cp">Copyright 2022 Sahwahita</span>
+  </footer>
+  <script src="/js/navbar.js"></script>
+  <script src="/js/animation.js"></script>
 </body>
+
 </html>

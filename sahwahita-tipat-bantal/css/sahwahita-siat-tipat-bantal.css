@@ -3,6 +3,10 @@ html, body {
   margin: 0;
   box-sizing: border-box;
   line-height: 1.5;
+<<<<<<< HEAD
+=======
+  background-color: whitesmoke;
+>>>>>>> origin/master
 
 }
 header, main, footer {
@@ -19,7 +23,14 @@ header, main, footer {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .image {
   max-width: 100%;
+=======
+figure img {
+  max-width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+>>>>>>> origin/master
 }
 
