@@ -9,8 +9,19 @@
   --id-white: #e9eaec;
 }
 
-.us {
-  pointer-events: none;
+.maintenance {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--id-red);
+  position: absolute;
+  justify-content: center;
+}
+
+.maintenance p {
+  font-size: 2rem;
+  color: whitesmoke;
+  align-self: center;
 }
 
 header {

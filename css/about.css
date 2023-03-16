@@ -1,0 +1,115 @@
+:root {
+  --id-red: #780e18;
+  --id-white: #e9eaec;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  /* outline: solid 1px red; */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--id-white);
+}
+
+main {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--id-red);
+}
+
+/* hero */
+
+.hero {
+  height: calc(100vh - 73px);
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero img {
+  max-height: 40vh;
+}
+
+.about-section {
+  display: flex;
+}
+
+.about-p5 {
+  max-width: 20vw;
+  margin: auto 1rem;
+  border-radius: 12px;
+  
+}
+
+
+.team-member {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
+  margin: 8px 8px 32px 8px;
+}
+
+.team-card-pendamping {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 8px;
+}
+
+.card-guru  {
+  box-shadow: rgba(98, 103, 107, 0.2) 0px 8px 24px;
+  width: 40%;
+  border-radius: 12px;
+}
+
+.team-card {
+  display: flex;
+  width: 100%;
+  height: 128px;
+  border-radius: 12px;
+  box-shadow: rgba(98, 103, 107, 0.2) 0px 8px 24px;
+}
+
+.team-card img {
+  max-width: 128px;
+  max-height: 128px;
+  border-radius: 12px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.team-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem 2rem;
+}
+
+.name {
+  font-size: var(--step-0);
+}
+
+.team-social {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.profile-msc {
+  font-style: italic;
+}
