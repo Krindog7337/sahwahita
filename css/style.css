@@ -23,6 +23,9 @@
   /* Step 5: 44.79px → 61.04px */
   --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
 
+  --step-6: clamp(3.38rem, calc(2.81rem + 2.83vw), 5.00rem);
+  --step--3: clamp(1.63rem, calc(1.48rem + 0.73vw), 2.05rem);
+
   /* color */
   --primary-color: #FDF9F0;
   --secondary-color: #F1DAC8;
@@ -122,7 +125,7 @@ h1 {
 
 .span-sahwahita {
   display: block;
-  font-size: 5rem;
+  font-size: var(--step-6);
   font-family: 'Bebas Neue';
   letter-spacing: .4rem;
   margin: 1rem auto;
@@ -130,7 +133,7 @@ h1 {
 
 .span-berguna {
   display: block;
-  font-size: var(--step-2);
+  font-size: var(--step--3);
   margin: 1rem auto;
 }
 

@@ -24,20 +24,11 @@
   --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
 
   /* color */
-  /* japanese */
-  --jp1-white: #F0E0C9;
-  --jp1-green: #6F725C;
-  --jp1-red: #B13126;
-  --jp1-black: #150A0E;
-
-  --jp2-blue: #23204B;
-  --jp2-red: #B30F27;
-  --jp2-white: #E7E2Df;
-
-  /* indo */
-  --id-red: #780e18;
-  --id-white: #e9eaec;
-
+  --primary-color: #FDF9F0;
+  --secondary-color: #F1DAC8;
+  --third-color: #F8E8DB;
+  /*Only use when needed*/
+  --accent-color: #492D1F;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
@@ -53,7 +44,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   /* overflow-x: hidden; */
-  background-color: var(--id-white);
+  background-color: var(--primary-color);
 }
 
 main {
@@ -63,5 +54,5 @@ main {
 }
 
 h1 {
-  color: var(--id-red);
+  color: var(--accent-color);
 }

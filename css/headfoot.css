@@ -168,13 +168,14 @@ nav a:focus:not(.dropnav) {
 }
 
 .this-page {
-  background-color: #780e1931;
+  background-color: #f1dac8a9;
   padding: 0 1rem;
 }
 
 /* footer */
 footer {
   background-color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 .footer-grid {
