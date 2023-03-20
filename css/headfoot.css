@@ -1,19 +1,17 @@
 :root {
-  --jp2-blue: #23204B;
-  --jp2-red: #B30F27;
-  --jp2-white: #E7E2Df;
-
-
-  /* indo */
-  --id-red: #780e18;
-  --id-white: #e9eaec;
+  /* color */
+  --primary-color: #FDF9F0;
+  --secondary-color: #F1DAC8;
+  --third-color: #F8E8DB;
+  /*Only use when needed*/
+  --accent-color: #492D1F;
 }
 
 .maintenance {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: var(--id-red);
+  background-color: var(--secondary-color);
   position: absolute;
   justify-content: center;
 }
@@ -26,7 +24,7 @@
 
 header {
   position: sticky;
-  background-color: #e9eaec83;
+  background-color: #fdf9f03b;
   /* background-color: #780e1931; */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -68,21 +66,21 @@ nav a {
   padding: 0 .5rem;
   align-items: center;
   text-decoration: none;
-  color: var(--id-red);
+  color: var(--accent-color);
   border-radius: 2rem;
   transition: 0.5s;
   margin: auto .2rem;
 }
 
 nav .active {
-  background-color: #780e19b7;
+  background-color: var(--third-color);
   color: var(--id-white);
   padding: .5rem 1.5rem;
 }
 
 nav a:hover:not(.dropnav),
 nav a:focus:not(.dropnav) {
-  background-color: var(--id-red);
+  background-color: var(--secondary-color);
   padding: 0 1.5rem;
   color: var(--id-white);
 }
@@ -112,7 +110,7 @@ nav a:focus:not(.dropnav) {
 
 .project-nav:hover .dropproject,
 .project-nav:focus-within .dropproject {
-  background-color: var(--id-red);
+  background-color: var(--secondary-color);
   color: var(--id-white);
   padding: .5rem 2rem;
 }
@@ -122,7 +120,7 @@ nav a:focus:not(.dropnav) {
   position: absolute;
   min-width: 13rem;
   z-index: 1;
-  background-color: var(--id-red);
+  background-color: var(--secondary-color);
   border-radius: 1rem;
   opacity: 0;
   transition: .5s;
@@ -144,7 +142,7 @@ nav a:focus:not(.dropnav) {
 .dropnav:hover {
   color: var(--id-white) !important;
   padding-left: 1rem !important;
-  background-color: var(--id-red);
+  background-color: var(--secondary-color);
 }
 
 .dropnav:hover i {
@@ -176,8 +174,7 @@ nav a:focus:not(.dropnav) {
 
 /* footer */
 footer {
-  background-color: var(--id-red);
-  color: var(--id-white);
+  background-color: var(--secondary-color);
 }
 
 .footer-grid {
@@ -197,7 +194,7 @@ footer {
 .footer-nav a {
   padding: .5rem 1rem .5rem 0;
   margin: 0 0 .3rem;
-  color: var(--id-white);
+  color: var(--accent-color);
   text-decoration: none;
   max-width: 20vw;
   border-radius: 2rem;
@@ -233,7 +230,7 @@ footer {
 }
 
 .custom-shape-divider-bottom-1676096280 .shape-fill {
-  fill: var(--id-red);
+  fill: var(--secondary-color)
 }
 
 
@@ -264,7 +261,7 @@ footer {
     right: 10px;
     background-color: transparent;
     border: none;
-    color: var(--id-red);
+    color: var(--accent-color);
     cursor: pointer;
     padding: .5rem;
     z-index: 100;
@@ -296,7 +293,7 @@ footer {
   .project-content a,
   .project-content:hover a {
     padding: 0 .5rem;
-    color: var(--id-red);
+    color: var(--secondary-color);
   }
 
   .project-content i {
@@ -342,7 +339,7 @@ footer {
     background-color: transparent;
     padding-left: 0;
     text-decoration: underline;
-    
+
   }
 }
 

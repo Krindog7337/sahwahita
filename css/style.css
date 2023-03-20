@@ -24,19 +24,10 @@
   --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
 
   /* color */
-  /* japanese */
-  --jp1-white: #F0E0C9;
-  --jp1-green: #6F725C;
-  --jp1-red: #B13126;
-  --jp1-black: #150A0E;
-
-  --jp2-blue: #23204B;
-  --jp2-red: #B30F27;
-  --jp2-white: #E7E2Df;
-
-  /* indo */
-  --id-red: #780e18;
-  --id-white: #e9eaec;
+  --primary-color: #FDF9F0;
+  --secondary-color: #F1DAC8;
+  --third-color:#F8E8DB;  /*Only use when needed*/
+  --accent-color: #492D1F;
 
 }
 
@@ -47,6 +38,7 @@
 
 * {
   font-family: 'Poppins', sans-serif; 
+  color: var(--accent-color);
   /* outline: solid 1px red; */
 }
 
@@ -57,7 +49,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   /* overflow-x: hidden; */
-  background-color: var(--id-white);
+  background-color: var(--primary-color);
 }
 
 main {
@@ -67,7 +59,7 @@ main {
 }
 
 h1 {
-  color: var(--id-red);
+  color: var(--accent-color);
   font-family: 'Bebas Neue';
   letter-spacing: .3rem;
 }
@@ -91,7 +83,7 @@ h1 {
 }
 
 .custom-shape-divider-bottom-1675943691 .shape-fill {
-  fill: var(--id-red);
+  fill: var(--secondary-color);
 }
 
 .custom-shape-divider-top-1675954738 {
@@ -111,7 +103,7 @@ h1 {
 }
 
 .custom-shape-divider-top-1675954738 .shape-fill {
-  fill: var(--id-red);
+  fill: var(--secondary-color);
 }
 
 
@@ -158,8 +150,8 @@ h1 {
   align-items: center;
   justify-content: space-between;
   border-radius: 2rem;
-  background-color: var(--id-red);
-  color: var(--id-white);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   padding: 0 24px;
   margin: 0 .5rem 0 0;
   cursor: pointer;
@@ -184,8 +176,7 @@ h1 {
   font-size: var(--step--1);
   height: 2.4rem;
   align-items: center;
-  border: solid 1px var(--id-red);
-  color: var(--id-red);
+  border: solid 1px var(--secondary-color);
   border-radius: 2rem;
   background-color: transparent;
   padding: 0 24px;
@@ -204,13 +195,13 @@ h1 {
 .secondary-btn:hover,
 .secondary-btn:focus {
   padding: 0px 24px;
-  border: solid 1px;
+  border: solid 1px var(--secondary-color);
 }
 
 /* best seller */
 .store-cta {
-  color: var(--id-white);
-  background-color: var(--id-red);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
   padding: 1rem 0;
 }
 
@@ -222,7 +213,6 @@ h1 {
 
 .store-cta-wrapper h1 {
   text-align: center;
-  color: var(--id-white);
   margin: 0;
   padding: .5rem;
 }
@@ -238,8 +228,8 @@ h1 {
   display: flex;
   flex-direction: column;
   border-radius: 12px;
-  background-color: var(--id-white);
-  color: var(--id-red);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .store-product-content {
@@ -251,11 +241,12 @@ h1 {
 }
 
 .store-product-desc span:nth-child(1) {
-  color: black;
+  color: black
 }
 
 .store-product-desc span:nth-child(2) {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .store-product-button {
@@ -266,8 +257,8 @@ h1 {
 .store-product-button a {
   display: flex;
   align-items: center;
-  background-color: var(--id-red);
-  color: var(--id-white);
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 .store-product-button a:hover {
@@ -301,8 +292,8 @@ h1 {
   color: black;
   border-radius: 12px;
   cursor: pointer;
-  background-color: #f0f0f0;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .3), 0px 1px 3px 1px rgba(0, 0, 0, .15);
+  background-color: #F8E8DB;
+  /* box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .3), 0px 1px 3px 1px rgba(0, 0, 0, .15); */
   transition: .3s;
 }
 
@@ -320,8 +311,8 @@ h1 {
 .project-card:hover img {
   /* transform: scale(103%) translateY(-2%);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px; */
-  background-color: var(--id-red);
-  color: var(--id-white);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   transform: scale(110%)  ;
 }
 
@@ -355,10 +346,11 @@ h1 {
 
 .team-card {
   display: flex;
+  background-color: #F8E8DB;
   width: 100%;
   height: 128px;
   border-radius: 12px;
-  box-shadow: rgba(98, 103, 107, 0.2) 0px 8px 24px;
+  /* box-shadow: rgba(98, 103, 107, 0.2) 0px 8px 24px; */
 }
 
 .team-card img {

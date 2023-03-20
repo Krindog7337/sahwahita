@@ -1,3 +1,11 @@
+:root {
+  /* color */
+  --primary-color: #FDF9F0;
+  --secondary-color: #F1DAC8;
+  --third-color:#F8E8DB;  /*Only use when needed*/
+  --accent-color: #492D1F;
+}
+
 .shopping-cart,
 .expand-more,
 .ramen-dining,
@@ -11,12 +19,12 @@
 
 .expand-more-navbar {
   width: 24px;
-  color: #780e18;
+  color: var(--accent-color);
   transition: .5s;
 }
 
 .fa {
-  color: #780e18;
+  color: var(--accent-color) ;
   font-size: 24px;
   text-align: center;
   text-decoration: none;
